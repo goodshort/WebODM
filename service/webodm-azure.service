@@ -10,7 +10,7 @@ Group=odm
 WorkingDirectory=/opt/WebODM
 Environment=PATH=/home/odm/.local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ExecStart=/bin/bash -c 'screen -dmS webodm /opt/WebODM/webodm.sh start --port 80'
-ExecStop=/bin/bash - c '/opt/WebODM/webodm.sh stop'
+ExecStop=/bin/bash -c '/opt/WebODM/webodm.sh stop'
 Restart=on-failure
 
 [Install]
