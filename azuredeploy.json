@@ -110,7 +110,7 @@
         ]
       }
     },
-	"customData":  "[concat('#include\n', 'https://gist.githubusercontent.com/goodshort/fb5839caf5899c55cbeb83203e052624/raw/58fee2b3a11685c731a9f5b7377621d35cfed90e/Cloud-Init.txt')]"
+	"customData":  "[concat('#include\n', 'https%3A%2F%2Fraw.githubusercontent.com%2Fgoodshort%2FWebODM%2Fazure-deploy%2FCloud-Init.txt')]"
   },
   "resources": [
     {
