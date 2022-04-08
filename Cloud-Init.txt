@@ -1,0 +1,18 @@
+#cloud-config
+
+package_update: true
+package_upgrade: true
+packages:
+ - docker.io
+ - docker-compose
+ - python-pip
+
+runcmd:
+- systemctl enable docker.service
+- systemctl enable containerd.service
+- git clone -b azure-deploy https://github.com/goodshort/WebODM --config core.autocrlf=input --depth 1 /opt/WebODM/
+- systemctl enable /opt/WebODM/service/webodm-azure.service
+- reboot now
+
+# To review logs
+# cat /var/log/cloud-init-output.log
