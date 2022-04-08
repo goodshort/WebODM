@@ -479,7 +479,7 @@ redis-server --version
 ```
 Should all work without errors.
 
-## Run it on the cloud (Google Compute, Amazon AWS)
+## Run it on the cloud (Google Compute, Amazon AWS, Microsoft Azure)
 
 12 steps, to have WebODM running on a cloud instance.
 
@@ -500,6 +500,9 @@ These steps are for Google Cloud, but can also be used for Amazon AWS, and other
 
 To setup the firewall on Google Cloud, open the instance, on the middle of the instance settings page find NIC0. Open it, and then add the TCP Port 8000 for ingress, and egress on the Firewall.
 
+### In Microsoft Azure
+
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgoodshort%2FWebODM%2Fazure-deploy%2Fazuredeploy.json) 
 
 ## License
 
